@@ -1,0 +1,17 @@
+{{ include('Templates/header.html' )}}
+<div class="signup-wrapper">
+    <h2>Signup</h2>
+    <form method="post" action="/signup">
+        <label>Name:</label>
+        <input type="text" name="name">
+        <label>E-mail:</label>
+        <input type="email" name="email">
+
+        {% for error in errors %}
+        <small>{{ error }}</small>
+        {% endfor %}
+
+        <button type="submit">SIGN UP</button>
+    </form>
+</div>
+{{ include('Templates/footer.html' )}}
