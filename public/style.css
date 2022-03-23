@@ -123,6 +123,7 @@ nav #logo {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 60%;
 }
 .signup-wrapper p {
   margin: 10px 0 10px 0;
@@ -135,9 +136,11 @@ nav #logo {
   flex-direction: column;
   text-align: left;
   font-weight: bold;
+  width: 40%;
 }
 .signup-wrapper form input {
   margin-bottom: 10px;
+  padding: 5px;
 }
 .signup-wrapper form button {
   background-color: #c4c4f8;
@@ -262,6 +265,10 @@ nav #logo {
   .right-img-container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .signup-wrapper {
+    width: 100%;
   }
 }
 

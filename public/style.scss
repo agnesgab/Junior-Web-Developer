@@ -5,7 +5,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-
 nav {
   display: flex;
   flex-direction: row;
@@ -23,7 +22,6 @@ nav {
     font-size: 25px;
     font-weight: 700;
   }
-
 }
 
 #hamburger {
@@ -36,7 +34,6 @@ nav {
 }
 
 .nav-links {
-
   display: flex;
   flex-direction: row;
   font-size: 18px;
@@ -98,7 +95,6 @@ nav {
   }
 }
 
-
 .headings-wrapper {
   margin-bottom: 30px;
 
@@ -137,6 +133,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 60%;
 
   p {
     margin: 10px 0 10px 0;
@@ -151,9 +148,11 @@ nav {
     flex-direction: column;
     text-align: left;
     font-weight: bold;
+    width: 40%;
 
     input {
       margin-bottom: 10px;
+      padding: 5px;
     }
 
     button {
@@ -296,6 +295,10 @@ nav {
   .right-img-container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .signup-wrapper {
+    width: 100%;
   }
 
 }

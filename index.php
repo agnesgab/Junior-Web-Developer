@@ -7,21 +7,18 @@ use Twig\Loader\FilesystemLoader;
 
 require_once 'vendor/autoload.php';
 
-
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', ['App\Controllers\PageController', 'showHome']);
     $r->addRoute('GET', '/services', ['App\Controllers\PageController', 'showServices']);
     $r->addRoute('GET', '/about', ['App\Controllers\PageController', 'showAbout']);
     $r->addRoute('GET', '/contact', ['App\Controllers\PageController', 'showContact']);
     $r->addRoute('GET', '/more', ['App\Controllers\PageController', 'showLearnMore']);
-
     $r->addRoute('GET', '/faq', ['App\Controllers\PageController', 'showFaq']);
     $r->addRoute('GET', '/signup', ['App\Controllers\SignupController', 'signup']);
-    $r->addRoute('POST', '/signup', ['App\Controllers\SignupController', 'filterInput']);
+    $r->addRoute('POST', '/signup', ['App\Controllers\SignupController', 'storeUser']);
     $r->addRoute('GET', '/success/{userId:\d+}/{name}', ['App\Controllers\PageController', 'showSuccess']);
 
 });
-
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 $uri = $_SERVER['REQUEST_URI'];
@@ -42,7 +39,6 @@ switch ($routeInfo[0]) {
 
         $controller = $routeInfo[1][0];
         $method = $routeInfo[1][1];
-
         $vars = $routeInfo[2];
 
         $response = (new $controller)->$method($vars);

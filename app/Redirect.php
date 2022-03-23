@@ -4,7 +4,6 @@ namespace App;
 
 class Redirect
 {
-
     private string $location;
 
     /**

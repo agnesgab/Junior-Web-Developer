@@ -8,7 +8,6 @@ class User {
     private string $name;
     private string $email;
 
-
     /**
      * @param string $name
      * @param string $email
@@ -45,6 +44,5 @@ class User {
     {
         return $this->email;
     }
-
 
 }

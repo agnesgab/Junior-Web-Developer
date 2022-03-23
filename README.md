@@ -18,12 +18,10 @@ Project is created with:
 * JavaScript ES6
 
 ## Setup
-To run this project, install Composer packages:
+To run this project, install Composer:
 
 ```
-$ composer require nikic/fast-route
-$ composer require doctrine/dbal
-$ composer require twig/twig
+$ composer install
 ```
 Documentation: <br>
 * [Nikic/Fast-route](https://github.com/nikic/FastRoute) - request router

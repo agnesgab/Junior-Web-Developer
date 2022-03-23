@@ -6,12 +6,10 @@
         <input type="text" name="name">
         <label>E-mail:</label>
         <input type="email" name="email">
-
         {% for error in errors %}
         <small>{{ error }}</small>
         {% endfor %}
-
-        <button type="submit">SIGN UP</button>
+        <button type="submit" value="submit" name="submit">SIGN UP</button>
     </form>
 </div>
 {{ include('Templates/footer.html' )}}

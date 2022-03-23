@@ -8,7 +8,6 @@ use Doctrine\DBAL\Exception;
 
 class Database
 {
-
     private static $connection = null;
 
     /**
@@ -16,7 +15,6 @@ class Database
      */
     public static function connection()
     {
-
         if (self::$connection === null) {
 
             $connectionParams = [
@@ -30,7 +28,6 @@ class Database
             self::$connection = DriverManager::getConnection($connectionParams);
 
         }
-
         return self::$connection;
     }
 }
