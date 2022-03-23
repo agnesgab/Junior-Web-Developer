@@ -23,7 +23,7 @@ To run this project, install Composer:
 ```
 $ composer install
 ```
-Documentation: <br>
+Packages & documentation: <br>
 * [Nikic/Fast-route](https://github.com/nikic/FastRoute) - request router
 * [Doctrine/Dbal](https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/) - database abstraction layer
 * [Twig](https://twig.symfony.com/doc/3.x/) - template language for PHP
