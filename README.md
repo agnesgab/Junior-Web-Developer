@@ -1,10 +1,10 @@
-#Digital Marketing landing page
+# Digital Marketing landing page
 
 ## Table of contents
 * General info
 * Technologies
 * Setup
-* Project Images
+
 
 ## General info 
 This project is simple landing page, with possibility to visit different sections from navigation bar.
@@ -35,6 +35,5 @@ Database: <br>
 [Database](app/Database.php) - provide connection parameters - 'dbname', 'user', 'password' <br>
 [Database Schema ](dump.sql) can be found here
 
-##Page Images
-![Large screen](C:\Users\agnes\large_screen.png)
-![Mobile](C:\Users\agnes\mobile_screen.png)
+
+
