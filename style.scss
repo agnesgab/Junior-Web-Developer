@@ -202,11 +202,13 @@ nav {
   nav {
     padding: 5px 80px 10px 50px;
   }
+
   .nav-links {
     font-size: 16px;
+    padding-right: 0;
 
     a {
-      margin: 15px;
+      margin: 0 15px;
     }
   }
 

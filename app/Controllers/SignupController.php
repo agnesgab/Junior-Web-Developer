@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Database;
-use App\Models\User;
 use App\Redirect;
 use App\View;
 
